@@ -1,5 +1,3 @@
-import java.util.stream.IntStream;
-
 // Platform             : GitHub
 // Course Name          : core-java-practices
 // Company              : MakeMyTrip India Pvt. Ltd.
@@ -15,6 +13,8 @@ import java.util.stream.IntStream;
     Input:  10
     Output: 1 2 3 4 5 6 7 8 9 10
 */
+import java.util.stream.IntStream;
+
 class CP_008_Print1To100WithoutLoop
 {
     // Algorithm 1: Using recursion
