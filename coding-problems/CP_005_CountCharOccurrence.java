@@ -54,14 +54,26 @@ class CP_005_CountCharOccurrence
         return (int) count;
     }
 
-/*
-    // Algorithm 4: Using StringUtils (Part of Apache Commons 3rd party library)
+    // Algorithm 4: Using streams in a simpler way (Java 8 and above)
     public static int getCharCount4(String str, char searchableChar)
+    {
+        // Use the following to find occurrences of multiple characters
+        // filter(e -> (char) e == searchableChar1 || (char) e == searchableChar2)
+        long count = str.chars()
+                        .filter(e -> (char) e == searchableChar)
+                        .count();
+
+        return (int) count;
+    }
+
+/*
+    // Algorithm 5: Using StringUtils (Part of Apache Commons 3rd party library)
+    public static int getCharCount5(String str, char searchableChar)
     {
         return StringUtils.countMatches(str, String.valueOf(searchableChar));
     }
 */
-
+    
     public static void main(String[] args)
     {
         String str        = "I love apple more than a mango";
@@ -70,5 +82,6 @@ class CP_005_CountCharOccurrence
         System.out.printf("Character '%c' is found %d time(s) in the string\n", charToSearch, getCharCount1(str, charToSearch));
         System.out.printf("Character '%c' is found %d time(s) in the string\n", charToSearch, getCharCount2(str, charToSearch));
         System.out.printf("Character '%c' is found %d time(s) in the string\n", charToSearch, getCharCount3(str, charToSearch));
+        System.out.printf("Character '%c' is found %d time(s) in the string\n", charToSearch, getCharCount4(str, charToSearch));
     }
 }
