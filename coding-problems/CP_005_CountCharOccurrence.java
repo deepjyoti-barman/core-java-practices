@@ -67,7 +67,7 @@ class CP_005_CountCharOccurrence
     }
 
 /*
-    // Algorithm 5: Using StringUtils (Part of Apache Commons 3rd party library)
+    // Algorithm 5: Using StringUtils (Part of Apache Commons Lang 3rd party library)
     public static int getCharCount5(String str, char searchableChar)
     {
         return StringUtils.countMatches(str, String.valueOf(searchableChar));
