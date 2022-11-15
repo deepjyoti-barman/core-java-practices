@@ -26,6 +26,6 @@ class TC_008_PrintHelloWithoutSemiColon
         if (System.out.printf("Hello GitHub\n").equals(null)) { }
 
         // Algorithm 4
-        while (System.out.printf("Hello World\n").equals(null)) { }
+        while (System.out.append("Hello World\n").equals(null)) { }
     }    
 }
