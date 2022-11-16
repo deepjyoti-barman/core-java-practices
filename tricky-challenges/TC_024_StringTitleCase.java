@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 // Platform             : GitHub
 // Course Name          : core-java-practices
 // Company              : MakeMyTrip India Pvt. Ltd.
@@ -16,6 +13,9 @@ import java.util.stream.Collectors;
     Input: naveen automation labs
     Output: Naveen Automation Labs
 */
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class TC_024_StringTitleCase {
 
     public static String strToTitleCase(String str) {
